@@ -101,7 +101,7 @@ if __name__ == '__main__':
     # INPUT:===================================================================================================
 
     # Experiment type:-----------------------------------------------------------------------
-    exper_type = 'demo'  #  'demo' (50 training utts) or 'full' (1k training utts)
+    exper_type = 'full'  #  'demo' (50 training utts) or 'full' (1k training utts)
 
     # Steps:---------------------------------------------------------------------------------
     b_download_data  = 1 # Downloads wavs and label data.
@@ -157,7 +157,7 @@ if __name__ == '__main__':
     if b_download_data:
         data_zip_file = join(this_dir, 'slt_arctic_%s_data.zip' % exper_type)
         call(['wget', 'http://felipeespic.com/depot/databases/merlin_demos/slt_arctic_%s_data.zip' % exper_type , '-O', data_zip_file])
-        call(['unzip', '-o', '-q', data_zip_file, '-d', this_dir])
+        call(['unzip', '-o', '-q', data_zip_file.split('.')[0], '-d', this_dir])
 
     # Setup Data:-----------------------------------------------------------------------------
     if b_setup_data:

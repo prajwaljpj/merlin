@@ -17,3 +17,22 @@ bin/
 
 # Pycharm IDE
 .idea/
+
+# compiled directories
+/tools/COPYING
+/tools/speech_tools/
+/tools/ChangeLog
+/tools/HDecode-3.4.1.tar.gz.1
+/tools/HTK-3.4.1.tar.gz.1
+/tools/HTS-2.3alpha_for_HTK-3.4.1.patch
+/tools/HTS-2.3alpha_for_HTK-3.4.1.tar.bz2
+/tools/HTS-2.3alpha_for_HTK-3.4.1.tar.bz2.1
+/tools/HTS_Document.pdf
+/tools/INSTALL
+/tools/README
+/tools/REAPER/
+/tools/festival/
+/tools/festvox/
+/tools/magphase/
+/tools/htk/
+/tools/postfilter/
