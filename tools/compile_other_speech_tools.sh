@@ -37,7 +37,7 @@ if [ "$install_speech_tools" = true ]; then
 
 fi
 
-# export paths
+# # export paths
 export ESTDIR=$tools_dir/speech_tools
 export LD_LIBRARY_PATH=$ESTDIR/lib:$LD_LIBRARY_PATH
 export PATH=$ESTDIR/bin:$PATH
@@ -111,7 +111,7 @@ fi
 export FESTDIR=$tools_dir/festival
 export PATH=$FESTDIR/bin:$PATH
 
-# 3. Get and compile festvox
+# # 3. Get and compile festvox
 if [ "$install_festvox" = true ]; then
     echo "downloading festvox..."
     festvox_url=http://festvox.org/festvox-2.7/festvox-2.7.0-release.tar.gz
